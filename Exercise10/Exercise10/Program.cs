@@ -29,7 +29,15 @@
             {
                 Console.WriteLine("Closing game.");
             }
-            while (response < 4)
+            if (response < 0)
+            {
+                Console.WriteLine("Invalid input.");
+            }
+            if (response > 4)
+            {
+                Console.WriteLine("Invalid input.");
+            }
+            while (response != 4)
             {
                 Console.WriteLine("**************");
                 Console.WriteLine("Menu:");
@@ -56,9 +64,16 @@
                 {
                     Console.WriteLine("Closing game.");
                 }
-
+                if (response < 0)
+                {
+                    Console.WriteLine("Invalid input.");
+                }
+                if (response > 4)
+                {
+                    Console.WriteLine("Invalid input.");
+                }
             }
-        }
 
+        }
     }
 }
