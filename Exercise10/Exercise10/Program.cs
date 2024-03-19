@@ -29,7 +29,7 @@
             {
                 Console.WriteLine("Closing game.");
             }
-            if (response < 0)
+            if (response <= 0)
             {
                 Console.WriteLine("Invalid input.");
             }
@@ -64,7 +64,7 @@
                 {
                     Console.WriteLine("Closing game.");
                 }
-                if (response < 0)
+                if (response <= 0)
                 {
                     Console.WriteLine("Invalid input.");
                 }
